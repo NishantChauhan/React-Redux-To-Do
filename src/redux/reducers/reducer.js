@@ -21,6 +21,7 @@ const reducer = (state = initialState, action) => {
         case UNDO_ACTION:
             console.log('[reducer.js] - UNDO_ACTION');
             return undoActionImpl(state);
+            // TODO Use Stack implementation for Undo and Redo
         case REDO_ACTION:
             console.log('[reducer.js] - REDO_ACTION');
             return redoActionImpl(state);
